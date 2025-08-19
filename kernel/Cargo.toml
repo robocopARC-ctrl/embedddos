@@ -1,0 +1,21 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cortex-m = "0.7.7"
+
+[dependencies.stm32h7xx-hal]
+version = "0.16.0"
+features = ["stm32h735", "rt"]
+
+[dependencies.cortex-m-rt]
+version = "0.7.5"
+features = ["device"]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+debug = false
