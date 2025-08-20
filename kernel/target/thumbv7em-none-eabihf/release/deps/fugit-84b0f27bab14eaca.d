@@ -1,0 +1,12 @@
+/home/user/12jul2025/embeddos/kernel/target/thumbv7em-none-eabihf/release/deps/fugit-84b0f27bab14eaca.d: /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/lib.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/aliases.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/duration.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/helpers.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/instant.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/rate.rs
+
+/home/user/12jul2025/embeddos/kernel/target/thumbv7em-none-eabihf/release/deps/libfugit-84b0f27bab14eaca.rlib: /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/lib.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/aliases.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/duration.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/helpers.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/instant.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/rate.rs
+
+/home/user/12jul2025/embeddos/kernel/target/thumbv7em-none-eabihf/release/deps/libfugit-84b0f27bab14eaca.rmeta: /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/lib.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/aliases.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/duration.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/helpers.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/instant.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/rate.rs
+
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/lib.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/aliases.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/duration.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/helpers.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/instant.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fugit-0.3.7/src/rate.rs:

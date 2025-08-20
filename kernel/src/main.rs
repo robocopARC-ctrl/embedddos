@@ -4,6 +4,7 @@
 // core ------> cortex ------> HAL
 use core::panic::PanicInfo;
 use cortex_m::peripheral::SCB;
+use cortex_m::peripheral::syst::SystClkSource;
 use cortex_m_rt::entry;
 use stm32h7xx_hal as hal;
 use hal::pac;
@@ -22,17 +23,17 @@ fn panic(_info : &PanicInfo) -> ! {
 const KERNEL_LINK_ADDR: u32 = 0x0802_0000;
 
 // CPU freq_hz
-const CPU_FREQ_HZ: u32 = 
+const CPU_FREQ_HZ: u32 = 400000000; 
 
 fn syst_init(syst: &mut cortex_m::peripheral::SYST, sys_freq_hz: u32, interval_ms: u32) {
     const sys_calib: u32 = 0x3e8; // 1000
     let reload_val = (sys_freq_hz / (sys_calib / interval_ms)) -1; 
 
-    syst.set_reload_value(reload_val);
+    syst.set_reload(reload_val);
     syst.clear_current();
     syst.enable_counter();
     syst.enable_interrupt();
-    syst.set_clock_source(cortex_m::peripheral::SystClkSource::Core);
+    syst.set_clock_source(SystClkSource::Core);
 }
 
 fn reallocate_vector_table(new_addr: u32) {
@@ -57,7 +58,7 @@ fn main() -> ! {
     } 
 
     // take ownership of cortex and device peripherals
-    let cp = cortex_m::Peripherals::take()
+    let mut cp = cortex_m::Peripherals::take()
         .unwrap();
     let dp = pac::Peripherals::take()
         .unwrap();
@@ -75,7 +76,7 @@ fn main() -> ! {
         .sys_ck(400.MHz())
         .freeze(pwrcfg, &dp.SYSCFG);
 
-    syst_init(&mut cp.SYST, 50);
+    syst_init(&mut cp.SYST, CPU_FREQ_HZ, 50);
 
     loop {}
 }

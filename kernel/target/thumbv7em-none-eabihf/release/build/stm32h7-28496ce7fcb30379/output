@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/home/user/12jul2025/embeddos/kernel/target/thumbv7em-none-eabihf/release/build/stm32h7-28496ce7fcb30379/out
+cargo:rerun-if-changed=src/stm32h735/device.x
+cargo:rerun-if-changed=build.rs
